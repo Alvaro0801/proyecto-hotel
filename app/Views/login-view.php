@@ -82,7 +82,7 @@
       Swal.fire({
         icon: 'error',
         title: 'Ocurrió un fallo, el usuario o contraseña ingresada no es válida',
-        timer: 1000,
+        timer: 1500,
       })
     }
     if (mensaje == '1') {
@@ -90,7 +90,7 @@
       Swal.fire({
         icon: 'warning',
         title: 'COMPLETE TODOS LOS CAMPOS POR FAVOR',
-        timer: 1000,
+        timer: 1500,
       })
     }
   </script>
