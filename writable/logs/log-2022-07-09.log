@@ -1040,3 +1040,91 @@ in APPPATH\Controllers\Login.php on line 40.
  6 SYSTEMPATH\CodeIgniter.php(453): CodeIgniter\CodeIgniter->startController()
  7 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
  8 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-07-09 22:12:26 --> Undefined index: email
+in APPPATH\Views\usuarios\registro_usuarios.php on line 65.
+ 1 APPPATH\Views\usuarios\registro_usuarios.php(65): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: email', 'APPPATH\\Views\\usuarios\\registro_usuarios.php', 65, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\usuarios\\registro_usuarios.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1135): CodeIgniter\View\View->render('usuarios/registro_usuarios', [], true)
+ 5 APPPATH\Controllers\UsuariosController.php(10): view('usuarios/registro_usuarios', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\UsuariosController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UsuariosController))
+ 8 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-07-09 22:36:09 --> Undefined offset: 1
+in APPPATH\Controllers\UsuariosController.php on line 53.
+ 1 APPPATH\Controllers\UsuariosController.php(53): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined offset: 1', 'APPPATH\\Controllers\\UsuariosController.php', 53, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\UsuariosController->guardar()
+ 3 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UsuariosController))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-07-09 22:37:48 --> Undefined offset: 1
+in APPPATH\Controllers\UsuariosController.php on line 53.
+ 1 APPPATH\Controllers\UsuariosController.php(53): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined offset: 1', 'APPPATH\\Controllers\\UsuariosController.php', 53, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\UsuariosController->guardar()
+ 3 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UsuariosController))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-07-09 22:38:17 --> Undefined offset: 1
+in APPPATH\Controllers\UsuariosController.php on line 53.
+ 1 APPPATH\Controllers\UsuariosController.php(53): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined offset: 1', 'APPPATH\\Controllers\\UsuariosController.php', 53, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\UsuariosController->guardar()
+ 3 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UsuariosController))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-07-09 22:40:04 --> Undefined offset: 1
+in APPPATH\Controllers\UsuariosController.php on line 53.
+ 1 APPPATH\Controllers\UsuariosController.php(53): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined offset: 1', 'APPPATH\\Controllers\\UsuariosController.php', 53, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\UsuariosController->guardar()
+ 3 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UsuariosController))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-07-09 22:41:16 --> Unknown column 'created_at' in 'field list'
+CRITICAL - 2022-07-09 22:41:16 --> Unknown column 'created_at' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `usuarios` (`username`, `pass`, `dni`, `nombre`, `apellidoPaterno`, `apellidoMaterno`, `telefono`, `email`, `idRol`, `created_at`) VALUES (\'Arturo\', \'$2y$10$GMOVfin0QCzMqXG1h7Khwe4ky.4hHtEbu/qPBm7PLCVIhgfBTVY2C\', \'12345678\', \'Arturo\', \'Mayta\', \'Gonzales\', \'983602785\', \'Arturo@gmail.com\', \'2\', \'2022-07-09 22:41:16\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(695): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `usuarios` (`username`, `pass`, `dni`, `nombre`, `apellidoPaterno`, `apellidoMaterno`, `telefono`, `email`, `idRol`, `created_at`) VALUES (\'Arturo\', \'$2y$10$GMOVfin0QCzMqXG1h7Khwe4ky.4hHtEbu/qPBm7PLCVIhgfBTVY2C\', \'12345678\', \'Arturo\', \'Mayta\', \'Gonzales\', \'983602785\', \'Arturo@gmail.com\', \'2\', \'2022-07-09 22:41:16\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(609): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `usuarios` (`username`, `pass`, `dni`, `nombre`, `apellidoPaterno`, `apellidoMaterno`, `telefono`, `email`, `idRol`, `created_at`) VALUES (\'Arturo\', \'$2y$10$GMOVfin0QCzMqXG1h7Khwe4ky.4hHtEbu/qPBm7PLCVIhgfBTVY2C\', \'12345678\', \'Arturo\', \'Mayta\', \'Gonzales\', \'983602785\', \'Arturo@gmail.com\', \'2\', \'2022-07-09 22:41:16\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1904): CodeIgniter\Database\BaseConnection->query('INSERT INTO `usuarios` (`username`, `pass`, `dni`, `nombre`, `apellidoPaterno`, `apellidoMaterno`, `telefono`, `email`, `idRol`, `created_at`) VALUES (:username:, :pass:, :dni:, :nombre:, :apellidoPaterno:, :apellidoMaterno:, :telefono:, :email:, :idRol:, :created_at:)', [...], false)
+ 5 SYSTEMPATH\Model.php(278): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(738): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(666): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH\Controllers\UsuariosController.php(60): CodeIgniter\Model->insert([...])
+ 9 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\UsuariosController->guardar()
+10 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UsuariosController))
+11 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-07-09 22:47:07 --> Unknown column 'email' in 'where clause'
+CRITICAL - 2022-07-09 22:47:07 --> Unknown column 'email' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT 1
+FROM `usuarios`
+WHERE `email` = \'aldo@hotmail.com\'
+ LIMIT 1', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(695): CodeIgniter\Database\MySQLi\Connection->execute('SELECT 1
+FROM `usuarios`
+WHERE `email` = \'aldo@hotmail.com\'
+ LIMIT 1')
+ 3 SYSTEMPATH\Database\BaseConnection.php(609): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT 1
+FROM `usuarios`
+WHERE `email` = \'aldo@hotmail.com\'
+ LIMIT 1')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT 1
+FROM `usuarios`
+WHERE `email` = :email:
+ LIMIT 1', [...], false)
+ 5 SYSTEMPATH\Validation\Rules.php(142): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\Validation\Validation.php(306): CodeIgniter\Validation\Rules->is_unique('aldo@hotmail.com', 'email', [...], null)
+ 7 SYSTEMPATH\Validation\Validation.php(173): CodeIgniter\Validation\Validation->processRules('user_email', 'user_email', 'aldo@hotmail.com', [...], [...])
+ 8 APPPATH\Controllers\UsuariosController.php(34): CodeIgniter\Validation\Validation->run()
+ 9 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\UsuariosController->guardar()
+10 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UsuariosController))
+11 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-07-09 22:50:43 --> Undefined offset: 1
+in APPPATH\Controllers\UsuariosController.php on line 53.
+ 1 APPPATH\Controllers\UsuariosController.php(53): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined offset: 1', 'APPPATH\\Controllers\\UsuariosController.php', 53, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(896): App\Controllers\UsuariosController->guardar()
+ 3 SYSTEMPATH\CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UsuariosController))
+ 4 SYSTEMPATH\CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(55): CodeIgniter\CodeIgniter->run()
